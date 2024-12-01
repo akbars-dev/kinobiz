@@ -1,0 +1,43 @@
+<script setup>
+import swiper from '../components/swiper.vue'
+</script>
+
+
+<template>
+<swiper/>
+<h1>Home Page</h1>
+</template>
+
+
+<style scoped>
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-track {
+    display: flex;
+    width: 100%;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.blind {
+    background: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5) 30%,
+            rgba(0, 0, 0, 0.2) 70%);
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+</style>
