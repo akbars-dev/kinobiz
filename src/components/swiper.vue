@@ -63,7 +63,7 @@ onBeforeUnmount(() => {
 
 
 <template>
-    <div class="swiper-container min-h-[500px] overflow-hidden relative w-full">
+    <div class="swiper-container overflow-hidden relative w-full">
         <div class="swiper-track flex transition-transform duration-500"
             :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
             <div class="swiper-slide flex-shrink-0 w-full h-full" v-for="(slide, index) in visibleSlides" :key="index">

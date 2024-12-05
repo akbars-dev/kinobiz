@@ -1,43 +1,27 @@
 <script setup>
 import swiper from '../components/swiper.vue'
+import indicator from '../components/indicator.vue';
+import slider from '../components/slider.vue';
 </script>
 
-
 <template>
-<swiper/>
-<h1>Home Page</h1>
+    <swiper />
+
+    <!-- /kinolar  -->
+    <indicator title="Kinolar" link="/movies" />
+    <slider />
+
+    <!-- /seriallar  -->
+    <indicator title="Seriallar" link="/movies" />
+    <slider />
+
+    <!-- /multfilmlar  -->
+    <indicator title="Multfilmlar" link="/movies" />
+    <slider />
+
+    <!-- /animelar  -->
+    <indicator title="Animelar" link="/movies" />
+    <slider />
 </template>
 
-
-<style scoped>
-.swiper-container {
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-track {
-    display: flex;
-    width: 100%;
-}
-
-.swiper-slide {
-    flex-shrink: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.blind {
-    background: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5) 30%,
-            rgba(0, 0, 0, 0.2) 70%);
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-}
-
-.image {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
-</style>
+<style scoped></style>
