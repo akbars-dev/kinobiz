@@ -1,8 +1,7 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -12,11 +11,13 @@ export default {
       },
 
       backgroundColor: {
-        main: "#E4003A"
+        main: "#E4003A",
+        yellow: "#ffc30d",
       },
 
       colors: {
-        yellow: "#ffc30d"
+        yellow: "#ffc30d",
+        main: "#E4003A"
       },
 
       screens: {
@@ -34,4 +35,3 @@ export default {
   },
   plugins: [],
 }
-

@@ -4,6 +4,11 @@
 @tailwind utilities;
 
 body {
-    background-color: black !important;
+  background-color: #0B090A !important;
+  color: white;
 }
 
+
+.video {
+  max-height: 625px !important;
+}
